@@ -1,0 +1,24 @@
+{
+  "name": "mern-stack-website",
+  "version": "1.0.0",
+  "description": "Personal project for learning purposes. Developing a website with MongoDB, Express, React, and Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aton4/MERN-Stack-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aton4/MERN-Stack-Website/issues"
+  },
+  "homepage": "https://github.com/aton4/MERN-Stack-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  }
+}
