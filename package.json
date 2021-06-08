@@ -19,6 +19,7 @@
   "homepage": "https://github.com/aton4/MERN-Stack-Website#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.13"
+    "mongoose": "^5.12.13",
+    "prettier": "^2.3.1"
   }
 }
