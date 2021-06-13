@@ -6,6 +6,9 @@
 .pnp.js
 /backend/node_modules
 
+# secrets
+/backend/.env
+
 # testing
 /coverage
 
