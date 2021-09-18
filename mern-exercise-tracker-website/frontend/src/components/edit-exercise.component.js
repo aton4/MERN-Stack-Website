@@ -109,7 +109,6 @@ export default class EditExercises extends Component {
               {this.state.users.map(function (user) {
                 return (
                   <option key={user} value={user}>
-                    {" "}
                     {user}
                   </option>
                 );
