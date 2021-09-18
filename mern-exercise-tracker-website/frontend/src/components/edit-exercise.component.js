@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {Redirect} from "react-router";
+import { Redirect } from "react-router";
 
 export default class EditExercises extends Component {
   constructor(props) {
@@ -90,7 +90,7 @@ export default class EditExercises extends Component {
         exercise
       )
       .then((res) => {
-        console.log(res.data)
+        console.log(res.data);
         window.location = "/";
       });
 

@@ -32,7 +32,7 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    console.log("did mont???")
+    console.log("did mont???");
     axios
       .get("http://localhost:50001/exercises/")
       .then((response) => {
@@ -71,10 +71,10 @@ export default class ExercisesList extends Component {
   }
 
   render() {
-    console.log("rerender")
+    console.log("rerender");
     console.log("s4: ");
-        console.log(this.state);
-        console.log("e4");
+    console.log(this.state);
+    console.log("e4");
     return (
       <div>
         <h1>Logged Exercises</h1>
