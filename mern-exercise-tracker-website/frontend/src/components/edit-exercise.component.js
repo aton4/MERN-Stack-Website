@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import {Redirect} from "react-router";
 
 export default class EditExercises extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ export default class EditExercises extends Component {
       duration: 0,
       date: new Date(),
       users: [],
+      redirect: false,
     };
   }
 
@@ -87,12 +89,21 @@ export default class EditExercises extends Component {
         "http://localhost:50001/exercises/update/" + this.props.match.params.id,
         exercise
       )
-      .then((res) => console.log(res.data));
+      .then((res) => {
+        console.log(res.data)
+        window.location = "/";
+      });
 
-    window.location = "/";
+    // this.setState({redirect: true});
   }
 
   render() {
+    // const {redirect} = this.state;
+    // if (redirect)
+    //   return(
+    //     <Redirect to="/" />
+    //   )
+
     return (
       <div>
         <h1>Edit Exercise Log</h1>
