@@ -32,7 +32,6 @@ export default class ExercisesList extends Component {
   }
 
   componentDidMount() {
-    console.log("did mont???");
     axios
       .get("http://localhost:50001/exercises/")
       .then((response) => {
