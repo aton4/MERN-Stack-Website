@@ -7,17 +7,32 @@ import ExercisesList from "./components/exercises-list.component";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+  },
+  content: {
+    width: "100%",
+    margin: "0px 0px 0px 50px",
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
     <Router>
-      <div className="container">
+      <div className={classes.root}>
         <Navbar />
-        <br />
-        <Route path="/" exact component={ExercisesList} />
-        <Route path="/edit/:id" component={EditExercise} />
-        <Route path="/create" component={CreateExercise} />
-        <Route path="/user" component={CreateUser} />
+        <div className={classes.content}>
+          <br />
+          <Route path="/" exact component={ExercisesList} />
+          <Route path="/edit/:id" component={EditExercise} />
+          <Route path="/create" component={CreateExercise} />
+          <Route path="/user" component={CreateUser} />
+        </div>
       </div>
     </Router>
   );
